@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		653D6C87C48CABB53D74F892 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A15A2FB154E411170406D155 /* libPods.a */; };
+		74FDFCC41C0E414C0001D611 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FDFCC31C0E414C0001D611 /* Social.framework */; };
+		74FDFCC61C0EF0980001D611 /* FBshare.png in Resources */ = {isa = PBXBuildFile; fileRef = 74FDFCC51C0EF0980001D611 /* FBshare.png */; };
+		74FDFCC81C0EF1FE0001D611 /* images-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 74FDFCC71C0EF1FE0001D611 /* images-1.jpeg */; };
+		DB131FC11C01F4C5003F4C85 /* Dashboard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB131FC01C01F4C5003F4C85 /* Dashboard.jpg */; };
+		DB131FC31C01F4CD003F4C85 /* startstoplight.png in Resources */ = {isa = PBXBuildFile; fileRef = DB131FC21C01F4CD003F4C85 /* startstoplight.png */; };
+		DB1D9E9C1C0739EB007015AB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1D9E9B1C0739EB007015AB /* DetailViewController.m */; };
+		DB3591A71C0B4E1D00CCBA95 /* HomeBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = DB3591A61C0B4E1D00CCBA95 /* HomeBtn.png */; };
+		DB7CB3DB1BFFB50C00CEF6E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7CB3DA1BFFB50C00CEF6E5 /* AppDelegate.swift */; };
+		DB7CB3DD1BFFB50C00CEF6E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7CB3DC1BFFB50C00CEF6E5 /* ViewController.swift */; };
+		DB7CB3E01BFFB50C00CEF6E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7CB3DE1BFFB50C00CEF6E5 /* Main.storyboard */; };
+		DB7CB3E21BFFB50C00CEF6E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7CB3E11BFFB50C00CEF6E5 /* Assets.xcassets */; };
+		DB7CB3E51BFFB50C00CEF6E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7CB3E31BFFB50C00CEF6E5 /* LaunchScreen.storyboard */; };
+		DB7CB3ED1BFFB5F000CEF6E5 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = DB7CB3EC1BFFB5F000CEF6E5 /* Podfile */; };
+		DB7CB3EF1BFFB68300CEF6E5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7CB3EE1BFFB68300CEF6E5 /* MapKit.framework */; };
+		DB7CB3F11BFFB68D00CEF6E5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7CB3F01BFFB68D00CEF6E5 /* CoreLocation.framework */; };
+		DB7CB3F51BFFB6C400CEF6E5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7CB3F41BFFB6C400CEF6E5 /* LoginViewController.m */; };
+		DB7CB3F81BFFB6D800CEF6E5 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7CB3F71BFFB6D800CEF6E5 /* SignUpViewController.m */; };
+		DB7CB3FB1BFFBEA500CEF6E5 /* FindMyFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7CB3FA1BFFBEA500CEF6E5 /* FindMyFriendViewController.m */; };
+		DB7CB3FE1BFFD04A00CEF6E5 /* NaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7CB3FD1BFFD04A00CEF6E5 /* NaviViewController.m */; };
+		DB7CB4041BFFD4C000CEF6E5 /* indexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7CB4031BFFD4C000CEF6E5 /* indexViewController.m */; };
+		DB7CB4071C00027500CEF6E5 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7CB4061C00027500CEF6E5 /* MapViewController.m */; };
+		DB937F531C0B0BA7002F2280 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB937F521C0B0BA7002F2280 /* MenuViewController.m */; };
+		DB937F551C0B109A002F2280 /* demo-1-02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB937F541C0B109A002F2280 /* demo-1-02.jpg */; };
+		DB9D62C91C0BE21500EE39D4 /* StopBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = DB9D62C81C0BE21500EE39D4 /* StopBtn.png */; };
+		DBB44D6C1C108FAA0088CC13 /* white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBB44D6B1C108FAA0088CC13 /* white.jpg */; };
+		DBB8A07E1C0C7C6C0084824F /* LocationSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB8A07D1C0C7C6C0084824F /* LocationSegue.m */; };
+		DBBF98EB1C04D85800E79242 /* ForgetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBBF98EA1C04D85800E79242 /* ForgetPasswordViewController.m */; };
+		DBC572471C0B358C006A3C55 /* sprot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC572461C0B358C006A3C55 /* sprot.jpg */; };
+		DBC572491C0B367E006A3C55 /* startBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC572481C0B367E006A3C55 /* startBtn.png */; };
+		DBC5724D1C0B39CA006A3C55 /* indexLOGO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC5724C1C0B39CA006A3C55 /* indexLOGO.jpg */; };
+		DBC572541C0B3AFC006A3C55 /* GetFriendBtn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC5724E1C0B3AFB006A3C55 /* GetFriendBtn.jpg */; };
+		DBC572551C0B3AFC006A3C55 /* LogoutBtn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC5724F1C0B3AFB006A3C55 /* LogoutBtn.jpg */; };
+		DBC572561C0B3AFC006A3C55 /* NaviBtn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC572501C0B3AFC006A3C55 /* NaviBtn.jpg */; };
+		DBC572571C0B3AFC006A3C55 /* RecordBtn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC572511C0B3AFC006A3C55 /* RecordBtn.jpg */; };
+		DBC572581C0B3AFC006A3C55 /* SettingBtn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC572521C0B3AFC006A3C55 /* SettingBtn.jpg */; };
+		DBC572591C0B3AFC006A3C55 /* SportBtn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC572531C0B3AFC006A3C55 /* SportBtn.jpg */; };
+		DBC5725E1C0B4669006A3C55 /* mapBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = DBC5725D1C0B4669006A3C55 /* mapBtn.png */; };
+		DBDB8CBC1CA234A7004EF759 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBDB8CBB1CA234A7004EF759 /* Accounts.framework */; };
+		DBE91A001C0669C5009EAF77 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE919FF1C0669C5009EAF77 /* LocationViewController.m */; };
+		DBE91A031C070424009EAF77 /* RecordingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE91A021C070424009EAF77 /* RecordingTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		097CA7F6C4D950AB7BC0EE99 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		74FDFCC31C0E414C0001D611 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		74FDFCC51C0EF0980001D611 /* FBshare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FBshare.png; sourceTree = "<group>"; };
+		74FDFCC71C0EF1FE0001D611 /* images-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-1.jpeg"; sourceTree = "<group>"; };
+		A15A2FB154E411170406D155 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB131FC01C01F4C5003F4C85 /* Dashboard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dashboard.jpg; sourceTree = "<group>"; };
+		DB131FC21C01F4CD003F4C85 /* startstoplight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startstoplight.png; sourceTree = "<group>"; };
+		DB1D9E9A1C0739EB007015AB /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		DB1D9E9B1C0739EB007015AB /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		DB3591A61C0B4E1D00CCBA95 /* HomeBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeBtn.png; sourceTree = "<group>"; };
+		DB7CB3D71BFFB50C00CEF6E5 /* GetRide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetRide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB7CB3DA1BFFB50C00CEF6E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB7CB3DC1BFFB50C00CEF6E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB7CB3DF1BFFB50C00CEF6E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB7CB3E11BFFB50C00CEF6E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB7CB3E41BFFB50C00CEF6E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB7CB3E61BFFB50C00CEF6E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB7CB3EC1BFFB5F000CEF6E5 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DB7CB3EE1BFFB68300CEF6E5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DB7CB3F01BFFB68D00CEF6E5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DB7CB3F21BFFB6C400CEF6E5 /* GetRide-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GetRide-Bridging-Header.h"; sourceTree = "<group>"; };
+		DB7CB3F31BFFB6C400CEF6E5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		DB7CB3F41BFFB6C400CEF6E5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		DB7CB3F61BFFB6D800CEF6E5 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		DB7CB3F71BFFB6D800CEF6E5 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		DB7CB3F91BFFBEA500CEF6E5 /* FindMyFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindMyFriendViewController.h; sourceTree = "<group>"; };
+		DB7CB3FA1BFFBEA500CEF6E5 /* FindMyFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindMyFriendViewController.m; sourceTree = "<group>"; };
+		DB7CB3FC1BFFD04A00CEF6E5 /* NaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NaviViewController.h; sourceTree = "<group>"; };
+		DB7CB3FD1BFFD04A00CEF6E5 /* NaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NaviViewController.m; sourceTree = "<group>"; };
+		DB7CB4021BFFD4C000CEF6E5 /* indexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = indexViewController.h; sourceTree = "<group>"; };
+		DB7CB4031BFFD4C000CEF6E5 /* indexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = indexViewController.m; sourceTree = "<group>"; };
+		DB7CB4051C00027500CEF6E5 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		DB7CB4061C00027500CEF6E5 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		DB937F511C0B0BA7002F2280 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		DB937F521C0B0BA7002F2280 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		DB937F541C0B109A002F2280 /* demo-1-02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "demo-1-02.jpg"; sourceTree = "<group>"; };
+		DB9D62C81C0BE21500EE39D4 /* StopBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StopBtn.png; sourceTree = "<group>"; };
+		DBB44D6B1C108FAA0088CC13 /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white.jpg; sourceTree = "<group>"; };
+		DBB8A07C1C0C7C6C0084824F /* LocationSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationSegue.h; sourceTree = "<group>"; };
+		DBB8A07D1C0C7C6C0084824F /* LocationSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationSegue.m; sourceTree = "<group>"; };
+		DBBF98E91C04D85800E79242 /* ForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPasswordViewController.h; sourceTree = "<group>"; };
+		DBBF98EA1C04D85800E79242 /* ForgetPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPasswordViewController.m; sourceTree = "<group>"; };
+		DBC572461C0B358C006A3C55 /* sprot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sprot.jpg; sourceTree = "<group>"; };
+		DBC572481C0B367E006A3C55 /* startBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startBtn.png; sourceTree = "<group>"; };
+		DBC5724C1C0B39CA006A3C55 /* indexLOGO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = indexLOGO.jpg; sourceTree = "<group>"; };
+		DBC5724E1C0B3AFB006A3C55 /* GetFriendBtn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GetFriendBtn.jpg; sourceTree = "<group>"; };
+		DBC5724F1C0B3AFB006A3C55 /* LogoutBtn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LogoutBtn.jpg; sourceTree = "<group>"; };
+		DBC572501C0B3AFC006A3C55 /* NaviBtn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NaviBtn.jpg; sourceTree = "<group>"; };
+		DBC572511C0B3AFC006A3C55 /* RecordBtn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RecordBtn.jpg; sourceTree = "<group>"; };
+		DBC572521C0B3AFC006A3C55 /* SettingBtn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SettingBtn.jpg; sourceTree = "<group>"; };
+		DBC572531C0B3AFC006A3C55 /* SportBtn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SportBtn.jpg; sourceTree = "<group>"; };
+		DBC5725D1C0B4669006A3C55 /* mapBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapBtn.png; sourceTree = "<group>"; };
+		DBDB8CBB1CA234A7004EF759 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		DBE919FE1C0669C5009EAF77 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		DBE919FF1C0669C5009EAF77 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		DBE91A011C070424009EAF77 /* RecordingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordingTableViewController.h; sourceTree = "<group>"; };
+		DBE91A021C070424009EAF77 /* RecordingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordingTableViewController.m; sourceTree = "<group>"; };
+		FF8BE885DF49FC78D239613D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB7CB3D41BFFB50C00CEF6E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBDB8CBC1CA234A7004EF759 /* Accounts.framework in Frameworks */,
+				74FDFCC41C0E414C0001D611 /* Social.framework in Frameworks */,
+				DB7CB3F11BFFB68D00CEF6E5 /* CoreLocation.framework in Frameworks */,
+				DB7CB3EF1BFFB68300CEF6E5 /* MapKit.framework in Frameworks */,
+				653D6C87C48CABB53D74F892 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B09DB406685E9068EEADAB22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBDB8CBB1CA234A7004EF759 /* Accounts.framework */,
+				74FDFCC31C0E414C0001D611 /* Social.framework */,
+				DB7CB3F01BFFB68D00CEF6E5 /* CoreLocation.framework */,
+				DB7CB3EE1BFFB68300CEF6E5 /* MapKit.framework */,
+				A15A2FB154E411170406D155 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB7CB3CE1BFFB50C00CEF6E5 = {
+			isa = PBXGroup;
+			children = (
+				DB7CB3EC1BFFB5F000CEF6E5 /* Podfile */,
+				DB7CB3D91BFFB50C00CEF6E5 /* GetRide */,
+				DB7CB3D81BFFB50C00CEF6E5 /* Products */,
+				DDEE56FDD9E8EE6021745098 /* Pods */,
+				B09DB406685E9068EEADAB22 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DB7CB3D81BFFB50C00CEF6E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB7CB3D71BFFB50C00CEF6E5 /* GetRide.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB7CB3D91BFFB50C00CEF6E5 /* GetRide */ = {
+			isa = PBXGroup;
+			children = (
+				DB7CB3DA1BFFB50C00CEF6E5 /* AppDelegate.swift */,
+				DB7CB3DC1BFFB50C00CEF6E5 /* ViewController.swift */,
+				DB7CB3DE1BFFB50C00CEF6E5 /* Main.storyboard */,
+				DBB8A07C1C0C7C6C0084824F /* LocationSegue.h */,
+				DBB8A07D1C0C7C6C0084824F /* LocationSegue.m */,
+				DBB8A07F1C0C7D510084824F /* account */,
+				DB7CB3F91BFFBEA500CEF6E5 /* FindMyFriendViewController.h */,
+				DB7CB3FA1BFFBEA500CEF6E5 /* FindMyFriendViewController.m */,
+				DB7CB3FC1BFFD04A00CEF6E5 /* NaviViewController.h */,
+				DB7CB3FD1BFFD04A00CEF6E5 /* NaviViewController.m */,
+				DB7CB4051C00027500CEF6E5 /* MapViewController.h */,
+				DB7CB4061C00027500CEF6E5 /* MapViewController.m */,
+				DBE919FE1C0669C5009EAF77 /* LocationViewController.h */,
+				DBE919FF1C0669C5009EAF77 /* LocationViewController.m */,
+				DBE91A011C070424009EAF77 /* RecordingTableViewController.h */,
+				DBE91A021C070424009EAF77 /* RecordingTableViewController.m */,
+				DB1D9E9A1C0739EB007015AB /* DetailViewController.h */,
+				DB1D9E9B1C0739EB007015AB /* DetailViewController.m */,
+				74FDFCC71C0EF1FE0001D611 /* images-1.jpeg */,
+				74FDFCC51C0EF0980001D611 /* FBshare.png */,
+				DB131FC01C01F4C5003F4C85 /* Dashboard.jpg */,
+				DB131FC21C01F4CD003F4C85 /* startstoplight.png */,
+				DB937F541C0B109A002F2280 /* demo-1-02.jpg */,
+				DBC5725D1C0B4669006A3C55 /* mapBtn.png */,
+				DBC572461C0B358C006A3C55 /* sprot.jpg */,
+				DBC572481C0B367E006A3C55 /* startBtn.png */,
+				DB9D62C81C0BE21500EE39D4 /* StopBtn.png */,
+				DBC5724C1C0B39CA006A3C55 /* indexLOGO.jpg */,
+				DBC5724E1C0B3AFB006A3C55 /* GetFriendBtn.jpg */,
+				DBC5724F1C0B3AFB006A3C55 /* LogoutBtn.jpg */,
+				DBC572501C0B3AFC006A3C55 /* NaviBtn.jpg */,
+				DBC572511C0B3AFC006A3C55 /* RecordBtn.jpg */,
+				DBC572521C0B3AFC006A3C55 /* SettingBtn.jpg */,
+				DBC572531C0B3AFC006A3C55 /* SportBtn.jpg */,
+				DBB44D6B1C108FAA0088CC13 /* white.jpg */,
+				DB3591A61C0B4E1D00CCBA95 /* HomeBtn.png */,
+				DB7CB3E11BFFB50C00CEF6E5 /* Assets.xcassets */,
+				DB7CB3E31BFFB50C00CEF6E5 /* LaunchScreen.storyboard */,
+				DB7CB3E61BFFB50C00CEF6E5 /* Info.plist */,
+				DB7CB3F21BFFB6C400CEF6E5 /* GetRide-Bridging-Header.h */,
+			);
+			path = GetRide;
+			sourceTree = "<group>";
+		};
+		DBB8A07F1C0C7D510084824F /* account */ = {
+			isa = PBXGroup;
+			children = (
+				DB7CB4021BFFD4C000CEF6E5 /* indexViewController.h */,
+				DB7CB4031BFFD4C000CEF6E5 /* indexViewController.m */,
+				DB937F511C0B0BA7002F2280 /* MenuViewController.h */,
+				DB937F521C0B0BA7002F2280 /* MenuViewController.m */,
+				DB7CB3F61BFFB6D800CEF6E5 /* SignUpViewController.h */,
+				DB7CB3F71BFFB6D800CEF6E5 /* SignUpViewController.m */,
+				DB7CB3F31BFFB6C400CEF6E5 /* LoginViewController.h */,
+				DB7CB3F41BFFB6C400CEF6E5 /* LoginViewController.m */,
+				DBBF98E91C04D85800E79242 /* ForgetPasswordViewController.h */,
+				DBBF98EA1C04D85800E79242 /* ForgetPasswordViewController.m */,
+			);
+			name = account;
+			sourceTree = "<group>";
+		};
+		DDEE56FDD9E8EE6021745098 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				097CA7F6C4D950AB7BC0EE99 /* Pods.debug.xcconfig */,
+				FF8BE885DF49FC78D239613D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB7CB3D61BFFB50C00CEF6E5 /* GetRide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB7CB3E91BFFB50C00CEF6E5 /* Build configuration list for PBXNativeTarget "GetRide" */;
+			buildPhases = (
+				ED90E276C07DB9788A82D7D9 /* Check Pods Manifest.lock */,
+				DB7CB3D31BFFB50C00CEF6E5 /* Sources */,
+				DB7CB3D41BFFB50C00CEF6E5 /* Frameworks */,
+				DB7CB3D51BFFB50C00CEF6E5 /* Resources */,
+				C755C45F35D6D2C8EF77B968 /* Embed Pods Frameworks */,
+				59AFD018E0E5048213469128 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GetRide;
+			productName = GetRide;
+			productReference = DB7CB3D71BFFB50C00CEF6E5 /* GetRide.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB7CB3CF1BFFB50C00CEF6E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "CHIA HENG YU";
+				TargetAttributes = {
+					DB7CB3D61BFFB50C00CEF6E5 = {
+						CreatedOnToolsVersion = 7.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = DB7CB3D21BFFB50C00CEF6E5 /* Build configuration list for PBXProject "GetRide" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB7CB3CE1BFFB50C00CEF6E5;
+			productRefGroup = DB7CB3D81BFFB50C00CEF6E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB7CB3D61BFFB50C00CEF6E5 /* GetRide */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB7CB3D51BFFB50C00CEF6E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC572591C0B3AFC006A3C55 /* SportBtn.jpg in Resources */,
+				DBC572471C0B358C006A3C55 /* sprot.jpg in Resources */,
+				DB131FC11C01F4C5003F4C85 /* Dashboard.jpg in Resources */,
+				DB7CB3E51BFFB50C00CEF6E5 /* LaunchScreen.storyboard in Resources */,
+				DB9D62C91C0BE21500EE39D4 /* StopBtn.png in Resources */,
+				DBC5724D1C0B39CA006A3C55 /* indexLOGO.jpg in Resources */,
+				DB3591A71C0B4E1D00CCBA95 /* HomeBtn.png in Resources */,
+				DBB44D6C1C108FAA0088CC13 /* white.jpg in Resources */,
+				DB7CB3E21BFFB50C00CEF6E5 /* Assets.xcassets in Resources */,
+				DBC5725E1C0B4669006A3C55 /* mapBtn.png in Resources */,
+				DBC572561C0B3AFC006A3C55 /* NaviBtn.jpg in Resources */,
+				DB131FC31C01F4CD003F4C85 /* startstoplight.png in Resources */,
+				DBC572551C0B3AFC006A3C55 /* LogoutBtn.jpg in Resources */,
+				DBC572571C0B3AFC006A3C55 /* RecordBtn.jpg in Resources */,
+				DB7CB3ED1BFFB5F000CEF6E5 /* Podfile in Resources */,
+				DBC572491C0B367E006A3C55 /* startBtn.png in Resources */,
+				DB7CB3E01BFFB50C00CEF6E5 /* Main.storyboard in Resources */,
+				74FDFCC81C0EF1FE0001D611 /* images-1.jpeg in Resources */,
+				DB937F551C0B109A002F2280 /* demo-1-02.jpg in Resources */,
+				74FDFCC61C0EF0980001D611 /* FBshare.png in Resources */,
+				DBC572541C0B3AFC006A3C55 /* GetFriendBtn.jpg in Resources */,
+				DBC572581C0B3AFC006A3C55 /* SettingBtn.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59AFD018E0E5048213469128 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C755C45F35D6D2C8EF77B968 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED90E276C07DB9788A82D7D9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB7CB3D31BFFB50C00CEF6E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBE91A031C070424009EAF77 /* RecordingTableViewController.m in Sources */,
+				DB7CB3DD1BFFB50C00CEF6E5 /* ViewController.swift in Sources */,
+				DB7CB3DB1BFFB50C00CEF6E5 /* AppDelegate.swift in Sources */,
+				DBBF98EB1C04D85800E79242 /* ForgetPasswordViewController.m in Sources */,
+				DB937F531C0B0BA7002F2280 /* MenuViewController.m in Sources */,
+				DB7CB4071C00027500CEF6E5 /* MapViewController.m in Sources */,
+				DB7CB3FB1BFFBEA500CEF6E5 /* FindMyFriendViewController.m in Sources */,
+				DB7CB3F81BFFB6D800CEF6E5 /* SignUpViewController.m in Sources */,
+				DB7CB3FE1BFFD04A00CEF6E5 /* NaviViewController.m in Sources */,
+				DB7CB3F51BFFB6C400CEF6E5 /* LoginViewController.m in Sources */,
+				DBB8A07E1C0C7C6C0084824F /* LocationSegue.m in Sources */,
+				DB7CB4041BFFD4C000CEF6E5 /* indexViewController.m in Sources */,
+				DBE91A001C0669C5009EAF77 /* LocationViewController.m in Sources */,
+				DB1D9E9C1C0739EB007015AB /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DB7CB3DE1BFFB50C00CEF6E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB7CB3DF1BFFB50C00CEF6E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB7CB3E31BFFB50C00CEF6E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB7CB3E41BFFB50C00CEF6E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB7CB3E71BFFB50C00CEF6E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB7CB3E81BFFB50C00CEF6E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB7CB3EA1BFFB50C00CEF6E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 097CA7F6C4D950AB7BC0EE99 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GetRide",
+				);
+				INFOPLIST_FILE = GetRide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.chiahengyu.GetRide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GetRide/GetRide-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB7CB3EB1BFFB50C00CEF6E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF8BE885DF49FC78D239613D /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GetRide",
+				);
+				INFOPLIST_FILE = GetRide/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.chiahengyu.GetRide;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GetRide/GetRide-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB7CB3D21BFFB50C00CEF6E5 /* Build configuration list for PBXProject "GetRide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB7CB3E71BFFB50C00CEF6E5 /* Debug */,
+				DB7CB3E81BFFB50C00CEF6E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB7CB3E91BFFB50C00CEF6E5 /* Build configuration list for PBXNativeTarget "GetRide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB7CB3EA1BFFB50C00CEF6E5 /* Debug */,
+				DB7CB3EB1BFFB50C00CEF6E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB7CB3CF1BFFB50C00CEF6E5 /* Project object */;
+}
