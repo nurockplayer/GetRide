@@ -31,14 +31,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
-    [self getFriendLocation];
-
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(drawPolyLine) name:@"updateLocation" object:nil];
-
+    
 //    NSLog(@"%@", _locationArray);
     
 }
+
+- (void)viewDidAppear:(BOOL)animated {
+        [self getFriendLocation];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -77,29 +80,34 @@
     
     [friendLocation findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error)
      {
-//         NSMutableArray *parseAnnotationArray = [NSMutableArray new];
-
-         for (PFObject *object in objects)
-         {
-             NSNumber *friendLat = object[@"currentLatitude"];
-             NSNumber *friendLon = object[@"currentLongitude"];
-
-             PFObject* userObject = object[@"userKeyPointer"];
-             NSLog(@"userKeyPointer人名: %@",userObject);
-             
-             [userObject fetch];
-             NSString *userName = userObject[@"username"];
-             NSString *userEmail = userObject[@"email"];
-             
-             
-             MKPointAnnotation *annotaion = [[MKPointAnnotation alloc]init];
-             annotaion.coordinate = CLLocationCoordinate2DMake([friendLat doubleValue], [friendLon doubleValue]);
-             annotaion.title = [NSString stringWithFormat:@"%@",userName];
-             annotaion.subtitle =[NSString stringWithFormat:@"%@",userEmail];
-
-             [self.myMapView addAnnotation:annotaion];
-         }
+         // 切背景thread
+         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+             for (PFObject *object in objects)
+             {
+                 NSNumber *friendLat = object[@"currentLatitude"];
+                 NSNumber *friendLon = object[@"currentLongitude"];
+                 
+                 PFObject* userObject = object[@"userKeyPointer"];
+                 NSLog(@"userKeyPointer人名: %@",userObject);
+                 
+                 [userObject fetch];
+                 NSString *userName = userObject[@"username"];
+                 NSString *userEmail = userObject[@"email"];
+                 
+                 
+                 MKPointAnnotation *annotaion = [[MKPointAnnotation alloc]init];
+                 annotaion.coordinate = CLLocationCoordinate2DMake([friendLat doubleValue], [friendLon doubleValue]);
+                 annotaion.title = [NSString stringWithFormat:@"%@",userName];
+                 annotaion.subtitle =[NSString stringWithFormat:@"%@",userEmail];
+                 
+                 // UI要切回main thread
+                 dispatch_async(dispatch_get_main_queue(), ^{
+                     [self.myMapView addAnnotation:annotaion];
+                 });
+             }
+         });
      }];
+    
 }
 
 

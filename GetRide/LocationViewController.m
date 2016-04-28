@@ -32,13 +32,13 @@
         if ([manager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
             [manager requestWhenInUseAuthorization];
             
-            //设置代理（CLLocationManagerDelegate）
+            //設置代理（CLLocationManagerDelegate）
             manager.delegate = self;
             
-            //设置定位精度
+            //設置定位精度
             manager.desiredAccuracy = kCLLocationAccuracyBest;
             
-            //设置距离筛选
+            //設置距離篩選
             manager.distanceFilter = 100;
             
         }
